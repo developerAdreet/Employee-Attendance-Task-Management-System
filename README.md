@@ -17,3 +17,23 @@ Role-based web application to manage employee attendance and task assignments.
 
 ## Server
 - Apache Tomcat
+
+
+
+🚀 Deployment & CI/CD
+
+-Deployed on AWS EC2 (Ubuntu Linux)
+
+-Apache Tomcat used as application server
+
+-MySQL configured on EC2 instance
+
+-Jenkins Scripted Pipeline implemented for CI/CD:
+
+       -Automated source code checkout from GitHub
+
+             -Maven-based build and WAR packaging
+
+           -Automatic deployment to Tomcat server
+
+       -Zero manual intervention during deployment
