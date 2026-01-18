@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Delete Developer</title>
 <style>
     body {
         background-color: #0f0f0f;

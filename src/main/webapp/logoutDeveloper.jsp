@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Developer Logout</title>
 <style>
     body {
         margin: 0;
