@@ -82,37 +82,37 @@
 <fieldset>
 <legend style="text-align: center;"><h2>Register form</h2></legend>
 <label for="name" >Name:</label>
-<input type="text" id="name" name="name"><br><br>
+<input type="text" id="name" name="name" required><br><br>
 
 <label for ="salary" >Salary:</label>
-<input type="text" id="salary" name="salary"><br><br>
+<input type="text" id="salary" name="salary" required><br><br>
 
 
 <label for="emailId">Email Id:</label>
-<input type="text" id="emailId" name="emailId"><br><br>
+<input type="text" id="emailId" name="emailId" required><br><br>
 
 
 <label for="password">Password:</label>
-<input type="text" id="password" name="password"><br><br>
+<input type="text" id="password" name="password" required><br><br>
 
 
 <label for="role">Role:</label>
-<input type="text" id="role" name="role"><br><br>
+<input type="text" id="role" name="role" required><br><br>
 
 <label>DoorNo:</label>
-<input type="text" id="doorNo" name="doorNo"><br><br>
+<input type="text" id="doorNo" name="doorNo" required><br><br>
 
 <label for="street">Street:</label>
-<input type="text" id="street" name="street"><br><br>
+<input type="text" id="street" name="street" required><br><br>
 
 <label for="city">City:</label>
-<input type="text" id="city" name="city"><br><br>
+<input type="text" id="city" name="city" required><br><br>
 
 <label for="state">State:</label>
-<input type="text" id="state" name="state"><br><br>
+<input type="text" id="state" name="state" required><br><br>
 
 <label for="country">Country:</label>
-<input type="text" id="country" name="country"><br><br>
+<input type="text" id="country" name="country" required><br><br>
 <input type="submit" value="register">
 
 </fieldset>

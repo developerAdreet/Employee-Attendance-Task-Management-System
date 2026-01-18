@@ -83,7 +83,7 @@
     <h2>Developer Logout</h2>
 
 <form action="logoutDeveloper">
-        Enter Your Employee ID: <input type="text" name="empId">
+        Enter Your Employee ID: <input type="text" name="empId" required>
         <h1><input type="submit" type="submit">Logout</h1><br>
     </form>
 

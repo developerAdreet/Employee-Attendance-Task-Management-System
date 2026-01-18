@@ -93,10 +93,10 @@ if(updationMessage!=null){
 %>
 <form action="login" method="post">
 <label for="emailId">Email id: </label>
-<input type="text" id="emailId" name="emailId"><br><br>
+<input type="text" id="emailId" name="emailId" required><br><br>
 
 <label>Password: </label>
-<input type="text" id="password" name="password"><br><br>
+<input type="text" id="password" name="password" required><br><br>
 <input type="submit" value ="login"> 
 </form>
 <a href="checkEmail.jsp">Forgot Password?</a><br><br>

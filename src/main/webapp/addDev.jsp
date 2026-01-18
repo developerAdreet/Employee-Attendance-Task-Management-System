@@ -105,31 +105,31 @@ Country:<input type="text" name="country"><br><br>
        <fieldset>
       <legend ><h2>Developer Information</h2></legend>
         <label for="name">NAME: </label>
-        <input type="text" id="name" name="Name" required placeholder="Name"><br><br>
+        <input type="text" id="name" name="Name"  placeholder="Name" required><br><br>
 
         <label for="salary">SALARY: </label>
-        <input type="text" id="salary" name="salary" required  placeholder="Salary"><br><br>
+        <input type="text" id="salary" name="salary"  placeholder="Salary" required><br><br>
 
         <label for="email">EMAILID: </label>
         <input type="email" id="email" name="emailId" placeholder="email" required><br><br>
  
         <label for="password">PASSWORD: </label>
-        <input type="password" id="password" name="password" placeholder="password"><br><br>
+        <input type="password" id="password" name="password" placeholder="password" required><br><br>
         
          <label for="Doorno">DoorNo: </label>
-        <input type="text"  id="DoorNo" name="doorNo" placeholder="doorNo"><br><br>
+        <input type="text"  id="DoorNo" name="doorNo" placeholder="doorNo" required><br><br>
         
         <label for="Street">Street: </label>
-        <input type="text"  id="Street" name="street" placeholder="street"><br><br>
+        <input type="text"  id="Street" name="street" placeholder="street" required><br><br>
         
         <label for="City">City: </label>
-        <input type="text"  id="City" name="city" placeholder="city"><br><br>
+        <input type="text"  id="City" name="city" placeholder="city" required><br><br>
         
         <label for="Country">Country: </label>
-        <input type="text"  id="Country" name="country" placeholder="country"><br><br>
+        <input type="text"  id="Country" name="country" placeholder="country" required><br><br>
         
         <label for="State">State: </label>
-        <input type="text"  id="State" name="state" placeholder="state"><br><br>
+        <input type="text"  id="State" name="state" placeholder="state" required><br><br>
         
         <input type="submit" value="add">
     </fieldset> 

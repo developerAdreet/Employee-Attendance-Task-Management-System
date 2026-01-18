@@ -51,7 +51,7 @@ input[type="submit"]:hover {
 <form action="addTask">
 
 <label for="taskName">Task Name:</label>
-<input type="text" id="taskName" name="taskName"><br><br>
+<input type="text" id="taskName" name="taskName" required><br><br>
  <input type="submit" value="Add Task">
 </form>
 </body>

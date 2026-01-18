@@ -66,7 +66,7 @@
 </head>
 <body>
 <form action="deleteDeveloper">
- Enter Developer ID: <input type="text" name="employeeId">
+ Enter Developer ID: <input type="text" name="employeeId" required>
 <input type="submit" value="Delete">
 </form>
 </body>

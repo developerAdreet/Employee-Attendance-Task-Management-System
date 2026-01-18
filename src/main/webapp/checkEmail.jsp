@@ -70,7 +70,7 @@
 <form action="checkEmail">
 
 <label for="emailId">Email:</label>
-<input type="text" id="emailId" name="emailId"><br><br>
+<input type="text" id="emailId" name="emailId" required><br><br>
 <input type="submit" value="next">
 </form>
 </body>

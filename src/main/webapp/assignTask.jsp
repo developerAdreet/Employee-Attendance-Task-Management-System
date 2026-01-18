@@ -140,10 +140,10 @@
 <form action="assignTask">
           <h2>Assign Task</h2>
 <label for ="taskId">Task ID: </label>
-<input type="text" id="taskId" name="taskId"><br><br>
+<input type="text" id="taskId" name="taskId" required><br><br>
 
 <label for="employeeId">Developer ID:</label>
-<input type="text" id="employeeId" name="employeeId"><br><br>
+<input type="text" id="employeeId" name="employeeId" required><br><br>
 <input type="submit" value="Assign Task">
 </form>
 </body>
