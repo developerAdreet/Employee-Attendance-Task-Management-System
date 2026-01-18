@@ -71,8 +71,8 @@
 <label for="password">Enter new password:</label>
  <input type="text" id="password" name="password" required><br><br>
  
- <label>Confirm new password:</label>
-<input type="text" required><br><br>
+ <label for ="new password">Confirm new password:</label>
+<input type="text" id="new password" name ="new password" required><br><br>
 <input type="submit" value="reset">
 </form>
 </body>
