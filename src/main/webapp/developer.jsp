@@ -61,7 +61,7 @@
 <h1>Welcome developer!</h1>
 <a href="viewTasks">View Task</a><br>
 <a href="taskStatusUpdate.jsp">Change Task Status</a><br>
-<a href="updateDeveloper.jsp">Update</a><br>
+<a href="updateDeveloper">Update</a><br>
 <a href="logoutDeveloper.jsp">Log out</a>
 </div>
 </body>

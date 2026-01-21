@@ -81,8 +81,8 @@
 <h2 style="text-align: center;">Logout page</h2>
 <form action="logoutManager">
 
-<label for="attendenceId">Enter Attendance ID to logout: </label>
-<input type="text" id="attendenceId" name="attendanceId" required><br>
+
+
 <input type="submit" value="Logout">
 </form>
 </div>

@@ -17,7 +17,7 @@ public interface IEmployeeService {
 	public boolean assignTask(int taskId, int employeeId);
 	public List<Employee> viewAllDevelopersWithTask();
 	public  boolean  deleteDeveloper(int empId);
-	public void logoutEmployee(int attendenceId);
+	public void logoutEmployee();
 	public List<Task> viewTasksByEmployee(int employeeId);
 	public String updateTaskStatus(int taskId,int employeeId,String newStatus);
 	public String logoutDeveloper(int empId);

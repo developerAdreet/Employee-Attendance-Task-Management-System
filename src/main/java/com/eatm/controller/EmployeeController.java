@@ -173,6 +173,23 @@ public class EmployeeController {
 	}
 
 	
+	
+	
+	@GetMapping("/updateDeveloper")
+	public String showUpdateDeveloperPage(HttpSession session, HttpServletRequest request) {
+
+	    Employee loggedInDev = (Employee) session.getAttribute("loggedInEmployee");
+
+	    if (loggedInDev == null) {
+	        return "login";
+	    }
+
+	    Employee emp = employeeService.getEmployeeById(loggedInDev.getEmployeeId());
+	    request.setAttribute("employee", emp);
+
+	    return "updateDeveloper";
+	}
+
 	@PostMapping("/updateDeveloper")
 	public String updateDeveloperDetails(@ModelAttribute Employee employee, HttpSession session, HttpServletRequest request) {
 	    Employee loggedInDev = (Employee) session.getAttribute("loggedInEmployee");
@@ -191,25 +208,27 @@ public class EmployeeController {
 	    return "updateDeveloper";  
 	}
 
+	
+	
 	@GetMapping("/logoutManager")
 	public String logoutManager(HttpSession session) {
 
 	    Employee loggedIn = (Employee) session.getAttribute("loggedInEmployee");
 
-	    if (loggedIn == null || !"manager".equalsIgnoreCase(loggedIn.getRole())) {
-	        return "redirect:/login";
+	    if (loggedIn != null && "manager".equalsIgnoreCase(loggedIn.getRole())) {
+	        employeeService.logoutEmployee(); 
 	    }
 
-	    List<Attendence> list = loggedIn.getAttendence();
-	    if (list != null && !list.isEmpty()) {
-	        Attendence last = list.get(list.size() - 1);
-	        employeeService.logoutEmployee(last.getAttendenceId()); 
-	    
+	    try {
+	        session.invalidate();
+	    } catch (IllegalStateException e) {
+	        // ignore
 	    }
-	    session.removeAttribute("loggedInEmployee");
-	    session.invalidate(); 
+
 	    return "redirect:/login";
 	}
+
+
 
 	@GetMapping("/logoutDeveloper")
 	public String logoutDeveloper(@RequestParam("empId") int empId,HttpSession session,HttpServletRequest request) {

@@ -168,21 +168,26 @@ public class EmployeeService implements IEmployeeService{
 	}
 
 
-	public void logoutEmployee(int attendenceId) {
-		// TODO Auto-generated method stub
-		Employee loggedIn = (Employee) session.getAttribute("loggedInEmployee");
-Attendence attendance = attendenceDao.findById(attendenceId);
-        
-        if(attendance == null|| loggedIn==null) return;
-        Employee emp = attendance.getEmployee();
-        if ("manager".equalsIgnoreCase(attendance.getEmployee().getRole()) && 
-        		attendance.getEmployee().getEmployeeId() != loggedIn.getEmployeeId()) {
-            return;
-        }
+	 @Override
+	    public void logoutEmployee() {
 
-        attendance.setLogOutTime(LocalDateTime.now());
-        attendenceDao.updateAttendence(attendance);
-	}
+	        Employee loggedIn = (Employee) session.getAttribute("loggedInEmployee");
+	        if (loggedIn == null) return;
+
+	        List<Attendence> list = loggedIn.getAttendence();
+	        if (list == null || list.isEmpty()) return;
+
+	        
+	        Attendence latest = list.get(list.size() - 1);
+
+	        if (latest.getLogOutTime() == null) {
+	            latest.setLogOutTime(LocalDateTime.now());
+	            attendenceDao.updateAttendence(latest);
+	        }
+	    }
+
+
+
 
 	public List<Task> viewTasksByEmployee(int employeeId) {
 		// TODO Auto-generated method stub
